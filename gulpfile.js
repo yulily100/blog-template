@@ -4,14 +4,6 @@ var browser = require("browser-sync");
 var plumber = require("gulp-plumber");
 var autoprefixer = require('gulp-autoprefixer');
 
-// 起動するやつ
-gulp.task("server", function() {
-  browser({
-    server: {
-      baseDir: "./"
-    }
-  });
-});
 
 // sass
 gulp.task("sass", function() {
@@ -19,17 +11,37 @@ gulp.task("sass", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(gulp.dest("./css"))
-    .pipe(browser.reload({stream:true}));
+    .pipe(gulp.dest("./"));
+    //.pipe(browser.reload({stream:true}));
 });
 
-//htmlも見る
-gulp.task("html", function() {
-  gulp.src("./*.html")
-    .pipe(browser.reload({stream:true}));
+// sassをwatchする
+gulp.task('sass-watch', ['sass'], function(){
+  var watcher = gulp.watch('./scss/**/*.scss', ['sass']);
+  watcher.on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });
 });
 
-gulp.task("default",['server'], function() {
-  gulp.watch("sass/**/*.scss",["sass"]);
-  gulp.watch(["./*.html"],["html"]);
-});
+gulp.task("default", ["sass-watch"]);
+
+
+// 起動するやつ
+// gulp.task("server", function() {
+//   browser({
+//     server: {
+//       baseDir: "./"
+//     }
+//   });
+// });
+
+// //htmlも見る
+// gulp.task("html", function() {
+//   gulp.src("./*.html")
+//     .pipe(browser.reload({stream:true}));
+// });
+//
+// gulp.task("default",['server'], function() {
+//   gulp.watch("sass/**/*.scss",["sass"]);
+//   gulp.watch(["./*.html"],["html"]);
+// });
