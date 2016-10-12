@@ -1,0 +1,27 @@
+{
+  "name": "blog-template",
+  "version": "1.0.0",
+  "description": "wordpressのブログっぽいテンプレート",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "n",
+    "type": "git"
+  },
+  "author": "yulily100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulily100/template-less/issues"
+  },
+  "homepage": "https://github.com/yulily100/template-less",
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
