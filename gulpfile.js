@@ -17,7 +17,7 @@ gulp.task("sass", function() {
 
 // sassをwatchする
 gulp.task('sass-watch', ['sass'], function(){
-  var watcher = gulp.watch('./scss/**/*.scss', ['sass']);
+  var watcher = gulp.watch('./sass/**/*.scss', ['sass']);
   watcher.on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });

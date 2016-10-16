@@ -49,6 +49,13 @@
 
   <body>
     <header class="header">
-      <h1 class=""><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt=""></a></h1>
-
+      <div class="header-inner">
+        <h1 class=""><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt=""></a></h1>
+        <nav class="">
+          <ul>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+      </div>
     </header>

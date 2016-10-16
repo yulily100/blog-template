@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*
+Theme Name: blog-template
+Description:
+Theme URI: テーマの URL
+Author: yulily100
+Author URI: 作った人の URL
+Version: バージョン
+License: ライセンス
+License URI: ライセンスの URL
+*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -362,23 +373,23 @@ a {
 h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover, h5 a, h5 a:hover, h6 a, h6 a:hover {
   text-decoration: none; }
 
-.wrapper {
+.wrapper, .header-inner {
   width: 960px;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 1240px) {
-    .wrapper {
+    .wrapper, .header-inner {
       width: 1170px; } }
   @media (max-width: 1024px) {
-    .wrapper {
+    .wrapper, .header-inner {
       width: 720px; } }
   @media (max-width: 767px) {
-    .wrapper {
+    .wrapper, .header-inner {
       width: auto;
       margin-left: 10px;
       margin-right: 10px; } }
 
-.box-container {
+.box-container, .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
