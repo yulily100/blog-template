@@ -1,5 +1,5 @@
 <footer class="footer">
-  <p class="copyright">Copyright©2016 All Rights Reserved.</p>
+  <p class="copyright">Copyright© <?php echo date(Y); ?> All Rights Reserved.</p>
 </footer>
 
     <div id="fb-root"></div>

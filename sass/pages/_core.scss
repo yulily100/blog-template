@@ -1,4 +1,6 @@
 // Core (Main Style)
+
+// header
 .header-inner {
   align-items: center;
   justify-content: space-between;
@@ -8,4 +10,10 @@
 .headerNav {
   display: flex;
   list-style: none;
+}
+
+
+// footer
+.copyright {
+  text-align: center;
 }
