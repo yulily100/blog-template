@@ -1,5 +1,11 @@
 // Core (Main Style)
 .header-inner {
+  align-items: center;
+  justify-content: space-between;
   @extend .wrapper;
   @extend .box-container;
+}
+.headerNav {
+  display: flex;
+  list-style: none;
 }
