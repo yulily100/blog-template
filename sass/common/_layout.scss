@@ -45,7 +45,6 @@
 .l-row {
     margin-left: -15px;
     margin-right: -15px;
-    @include clearfix();
     @media #{$mq-sm} {
         margin-left: -10px;
         margin-right: -10px;

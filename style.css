@@ -422,13 +422,7 @@ h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover, h5 a, h5
 
 .l-row {
   margin-left: -15px;
-  margin-right: -15px;
-  *zoom: 1; }
-  .l-row:before, .l-row:after {
-    display: table;
-    content: " "; }
-  .l-row:after {
-    clear: both; }
+  margin-right: -15px; }
   @media (max-width: 767px) {
     .l-row {
       margin-left: -10px;
