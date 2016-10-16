@@ -39,7 +39,7 @@ $image_tag = '<img src="'. $image .'" class="eyecatch" alt="'. get_the_title() .
 <div class="recent-post">
   <?php
   $args = array(
-    'posts_per_page' => 4
+    'posts_per_page' => 8
   );
   $the_query = new WP_Query( $args );
   ?>
