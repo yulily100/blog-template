@@ -53,8 +53,8 @@
         <h1 class=""><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt=""></a></h1>
         <nav>
           <ul class="headerNav">
-            <li>about</li>
-            <li>contact</li>
+            <li><a href="#">bout</a></li>
+            <li><a href="#">contact</a></li>
           </ul>
         </nav>
       </div>
